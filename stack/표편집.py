@@ -41,7 +41,7 @@ def solution(n, k, cmd):
                 for _ in range(int(num)):
                     k = down[k]
                     
-        #삭제된 행 위치에 X, 그렇지 않은 행은 O
+    #삭제된 행 위치에 X, 그렇지 않은 행은 O
     answer = ["O"] * n
     for i in deleted:
         answer[i-1] = 'X'
