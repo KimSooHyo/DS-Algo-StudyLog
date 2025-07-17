@@ -2,8 +2,8 @@ from collections import defaultdict
 
 #깊이 우선 탐색에 필요한 전역 변수 선언
 adj_list = defaultdict(list)
-visited = set()
-result = []
+visited = set() #방문 여부 확인 위한 변수
+result = [] #방문 순서를 저장해서 최종 결과 반환하기 위한 변수
 
 def dfs(node):
     #현재 노드 방문 여부를 표시
