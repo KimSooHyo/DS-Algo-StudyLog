@@ -19,6 +19,7 @@ def solution(maps):
         dist[start[0]][start[1]] = 1
         
         #deque가 빌때까지 반복
+        #큐에 들어온 노드들이 계속해서 새로운 노드를 추가하면서 탐색 범위를 넓혀가는 방식
         while q:
             here = q.popleft()
             #현재 위치에서 이동할 수 있는 모든 방향
